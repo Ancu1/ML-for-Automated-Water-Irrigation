@@ -1,0 +1,41 @@
+
+    <html>
+    <head>
+        <title>Soil Quality Data Cleaning Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1 { color: #2c3e50; }
+            h2 { color: #3498db; }
+            table { border-collapse: collapse; width: 100%; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+        </style>
+    </head>
+    <body>
+        <h1>Soil Quality Dataset Cleaning Report</h1>
+        
+        <h2>Dataset Overview</h2>
+        <p>Original dimensions: 108 rows × 38 columns</p>
+        <p>Cleaned dimensions: 108 rows × 36 columns</p>
+        
+        <h2>Cleaning Steps Performed</h2>
+        <ul>
+            <li>Converted string values to numeric where possible</li>
+            <li>Handled missing values through median/mode imputation</li>
+            <li>Capped outliers using the 1.5 × IQR method</li>
+            <li>Encoded categorical variables</li>
+            <li>Standardized numerical features</li>
+            <li>Identified low variance features</li>
+        </ul>
+        
+        <h2>Feature Engineering Recommendations</h2>
+        <p>Consider creating interaction terms between soil texture components and water-related parameters.</p>
+        <p>For root vegetable irrigation, pay special attention to Available Water Capacity, which directly impacts irrigation needs.</p>
+        
+        <h2>ML Model Recommendations</h2>
+        <p>Consider using ensemble methods like Random Forest or Gradient Boosting as they often perform well on soil-related data.</p>
+        <p>For irrigation prediction, regression models would be appropriate.</p>
+    </body>
+    </html>
+    
